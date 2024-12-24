@@ -9684,3 +9684,45 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+/* SCROLL DOWN ANIM */
+.scroll-downs {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.mousey {
+  width: 30px;
+  height: 55px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  margin: 0 auto;
+}
+
+.scroller {
+  width: 4px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation: scroll 2s infinite;
+  margin: 5px auto;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
